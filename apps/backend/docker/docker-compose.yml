@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:13
+#    network_mode: host
+    restart: always
+    ports:
+      - "5432:5432"  # 👈 This exposes the container port 5432 to localhost:5432
+    environment:
+      POSTGRES_USER: hardik.chauhan
+      POSTGRES_PASSWORD: hardik.chauhan
+      POSTGRES_DB: skillgapdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

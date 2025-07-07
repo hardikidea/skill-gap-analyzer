@@ -1,0 +1,25 @@
+node_modules
+.env
+
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.local
+*.log
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# VSCode, Mac, etc
+.DS_Store
+.vscode/
+.idea/
+
+
+# Ignore environment config
+.env
