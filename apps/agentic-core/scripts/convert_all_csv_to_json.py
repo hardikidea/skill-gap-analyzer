@@ -6,7 +6,7 @@ import sys
 # 🔥 Fix field size issue
 csv.field_size_limit(sys.maxsize)
 
-INPUT_DIR = os.path.join(os.path.dirname(__file__), '../esco/v1')
+INPUT_DIR = os.path.join(os.path.dirname(__file__), '../esco/v1/csv')
 OUTPUT_DIR = os.path.join(INPUT_DIR, 'json')
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
