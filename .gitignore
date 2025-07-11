@@ -16,3 +16,6 @@ docker_pgdata/
 
 # Ignore environment config
 .env
+
+.idea/*
+apps/agentic-core/esco/v1/esco_master_full.json
